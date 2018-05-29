@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Description>Demo of EF core 
+
+From Billy </Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+    <Folder Include="Model\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Model\DTO\" />
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="MySql.Data" Version="6.10.5" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="6.10.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="2.4.0" />
+  </ItemGroup>
+
+<ItemGroup>
+  <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
+</ItemGroup>
+
+<ItemGroup>
+  <Compile Remove="Controllers\ValuesController.cs" />
+  <Compile Remove="Migrations\20180108061929_init.cs" />
+  <Compile Remove="Migrations\20180422141722_InitialCreate.Designer.cs" />
+  <Compile Remove="Migrations\20180422141722_InitialCreate.cs" />
+  <Compile Remove="Migrations\20180422142030_InitialCreated.Designer.cs" />
+  <Compile Remove="Migrations\20180422142030_InitialCreated.cs" />
+  <Compile Remove="Migrations\20180428011035_Init.cs" />
+  <Compile Remove="Migrations\20180428011035_Init.Designer.cs" />
+  <Compile Remove="Migrations\20180428011746_Init.cs" />
+  <Compile Remove="Migrations\20180428011746_Init.Designer.cs" />
+</ItemGroup>
+</Project>
